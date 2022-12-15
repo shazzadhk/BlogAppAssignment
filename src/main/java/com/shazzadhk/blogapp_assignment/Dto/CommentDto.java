@@ -1,8 +1,12 @@
 package com.shazzadhk.blogapp_assignment.Dto;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+
 public class CommentDto {
 
     private int id;
+    @NotEmpty(message = "comment content can not be empty")
     private String commentContent;
 
     public CommentDto(int id, String commentContent) {

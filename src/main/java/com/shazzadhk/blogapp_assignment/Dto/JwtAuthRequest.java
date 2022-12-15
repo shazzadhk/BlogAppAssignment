@@ -1,5 +1,6 @@
 package com.shazzadhk.blogapp_assignment.Dto;
 
+
 public class JwtAuthRequest {
 
     private String username;

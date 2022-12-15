@@ -3,6 +3,7 @@ package com.shazzadhk.blogapp_assignment.Dto;
 import com.shazzadhk.blogapp_assignment.entity.Comment;
 import com.shazzadhk.blogapp_assignment.entity.UserReact;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.*;
 
 
@@ -10,8 +11,10 @@ public class PostDto {
 
     private int postId;
 
+    @NotEmpty(message = "post title can not be empty")
     private String postTitle;
 
+    @NotEmpty(message = "post title can not be empty")
     private String postContent;
 
     private Date addedDate;

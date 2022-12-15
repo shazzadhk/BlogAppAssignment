@@ -24,19 +24,6 @@ public class UserController {
     @Autowired
     private UserServiceImp userServiceImp;
 
-//    @RequestMapping("/add-admin")
-//    public String add_admin(Model model){
-//        model.addAttribute("users",new Users());
-//        return "add_admin";
-//    }
-
-//    @PostMapping("/addAdmin")
-//    public String save_admin(@Valid Users users, Errors errors){
-//        if(errors.hasErrors())
-//            return "add_admin";
-//        userServiceImp.createAdminUser(users);
-//        return "home";
-//    }
 
     @RequestMapping("/add_blogger")
     public String add_blogger(Model model){
@@ -64,12 +51,4 @@ public class UserController {
         return "redirect:/all_blogger_list";
     }
 
-//
-//    @PostMapping("/addBlogger")
-//    public String save_blogger(@Valid Users bloggers, Errors errors){
-//        if(errors.hasErrors())
-//            return "add_admin";
-//        userServiceImp.createBloggerUser(bloggers);
-//        return "home";
-//    }
 }
